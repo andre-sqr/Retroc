@@ -1,1 +1,9 @@
-/* work in progress */
+.main-header_home {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-header_icons h1 {
+    display:inline;
+}
