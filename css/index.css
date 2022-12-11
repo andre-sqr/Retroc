@@ -1,9 +1,52 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+}
+
 .main-header_home {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 7vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
-.main-header_icons h1 {
-    display:inline;
+.main-header_logo {
+    margin-left: 2%;
+}
+
+#logo-homepage_header {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header_icons {
+    max-width: 100%;
+    margin-right: 2%;
+}
+
+.icon-homepage_header {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-header_hover:hover {
+    width: 35%;
+}
+
+/* .main-img_section {
+} */
+
+
+.main-img_homepage {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
 }
