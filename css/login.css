@@ -1,0 +1,36 @@
+.button {
+    background-color: #B06426;
+    width: 35%;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+}
+
+.button:hover {
+    border-bottom: 2px solid #546466;
+}
+
+.password {
+    text-align: left;
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: beige;
+    border: none;
+}
+
+.email {
+    text-align: left;
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: beige;
+    border: none; 
+}
+
+h2 {
+    text-align: left;
+    color: #B06426;
+}
