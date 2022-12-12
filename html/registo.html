@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo</title>
+    <link rel="stylesheet" type="text/css" href="registo.css">
+</head>
+<body>
+    <div class="form_container">
+        <form action="" id="form_registo" method="post">
+            <div class="campos_input">
+                <div class="gen_radio">
+                    <div class="gen_radio_juntar">
+                        <label for="masculino">Masculino</label>
+                        <label class="custom_radio" id="masculino">
+                            <input type="radio" name="genero">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="gen_radio_juntar">
+                        <label for="feminino">Feminino</label>
+                        <label class="custom_radio" id="feminino">
+                            <input type="radio" name="genero">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <input type="text" placeholder="Primeiro nome" required maxlength="50" id="pNome">
+                <input type="text" placeholder="Último nome" required maxlength="50" id="uNome">
+                <input type="email" placeholder="Email" required maxlength="50" id="email">
+                <input type="password" placeholder="Password" required id="password">
+                <div class="data_nasc">
+                    <input type="tel" placeholder="Dia (DD)" maxlength="2">
+                    <input type="tel" placeholder="Mês (MM)" maxlength="2">
+                    <input type="tel" placeholder="Ano (AAAA)" maxlength="4">
+                </div>
+                <input type="submit" id="submit" value="CRIAR CONTA">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
