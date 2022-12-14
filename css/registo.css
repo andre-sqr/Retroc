@@ -1,25 +1,29 @@
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form_container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 31.25rem;
 }
 
 .campos_input input{
     padding: 1rem;
     border-radius: 0.25rem;
     background-color: beige;
-    border: none;
+    border: 0.1rem solid beige;
     margin: 0.3125rem;
     font-size: 0.8rem;
 }
 
+.campos_input input:hover{
+    border-color: black;
+}
+
 #submit{
     background-color: #B06426;
+    border: 0.1rem solid #B06426;
     font-weight: bold;
     cursor: pointer;
     grid-column: 1 / 3;
@@ -28,6 +32,7 @@ body{
 }
 
 #submit:hover{
+    border-color: black;
     background-color: #C06426;
 }
 
@@ -46,6 +51,7 @@ body{
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 0.3rem;
 }
 
 .custom_radio input{
