@@ -5,7 +5,6 @@
     background-color: white;
 }
 
-/* nao mecher*/
 form.esquecestePassword {
     display: flex;
     flex-direction: column;
@@ -13,6 +12,7 @@ form.esquecestePassword {
     justify-content: center;
     align-items: center;
 }
+
 
 div.inputsFormPassword {
     display: grid;
@@ -24,10 +24,12 @@ div.inputsFormPassword {
 h2 {
     text-align: center;
     color: #B06426;
+    flex: 2;
     margin: 4vh;
 }
 
 p {
+    flex: 2;
     margin-bottom: 2vh;
 }
 
@@ -39,6 +41,8 @@ input.email {
     box-sizing: border-box;
     background-color: beige;
     border: none;
+    align-self: center;
+    flex: 1;
     grid-column-start: 1;
     grid-column-end: 2;
  }
@@ -49,6 +53,9 @@ input.email {
     padding: 12px 20px;
     border: none;
     color: white;
+    align-self: center;
+    flex: 1;
+    margin: none;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -61,14 +68,20 @@ img.logo {
     width: 110px;
     height: 30px;
     background: url(../assets/imgs/logo\ projeto\ tw_logo\ marrom.png) no-repeat bottom left scroll;
+    background-position: center;
     background-repeat: no-repeat;
     margin-top: 4vh;
+    align-self: center;
+    flex: 2;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
     align-items: center;
 }
 
