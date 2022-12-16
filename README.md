@@ -49,6 +49,8 @@ Para estruturação interna do projeto foram utilizadas as seguintes ferramentas
 
 ## Sobre o projeto:
 
-A Retroc é um projeto desenvolvido para a disciplina de Tecnologias Web no curso de Tecnologias e Sistemas de Informação para a Web, oferecido pelo Instituto Politécnico do Porto. 
+A Retroc é um projeto desenvolvido para a disciplina de Tecnologias Web, no curso de Tecnologias e Sistemas de Informação para a Web, oferecido pelo Instituto Politécnico do Porto. 
 
-O objetivo principal é o desenvolvimento de uma aplicação web com tema de loja e-commerce a partir de competências adquiridas na disciplina e cumprindo requisitos estabelecidos pelo projeto.
+O objetivo principal é o desenvolvimento de uma aplicação web a partir de competências adquiridas na disciplina, aplicando habilidades em HTML, CSS e Javascript, e cumprindo requisitos estabelecidos pelo projeto.
+
+O grupo optou por trabalhar com o tema e-commerce, e, na busca de um trabalho mais orgânico e original, foi desenvolvido uma empresa conceitual, a Retroc, na qual trabalhamos uma solução digital para suas características individuais — uma empresa com foco em peças de vestuário retrô e moda sustentável. Desta maneira, foi possível desenvolver uma aplicação web e uma identidade visual que tem um case como elemento que orienta o projeto.
