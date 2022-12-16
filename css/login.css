@@ -51,6 +51,8 @@ h2 {
 form {
     margin-left: 50px;
     align-self: center;
+    /*display: flex;
+    align-content: center;*/
 }
 
 body {
