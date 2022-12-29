@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retroc</title>
+    <link rel="stylesheet" href="../css/templateArtigo.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="templateArtigo.js"> </script>
+</head>
+<body>
+
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img id="img-artigo2" src="../assets/imgs/artigo1.2.jpg" alt="Imagem 2 Artigo Pull-over">                    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img id="img-artigo1" src="../assets/imgs/artigo1.jpeg" alt="Imagem Artigo Pull-over">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img id="img-artigo1.3" src="../assets/imgs/artigo1.3.jpg" alt="Imagem Artigo Pull-over">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div id="productInfo" class="productInfo">
+        <div id="info-text" class="text">
+            <h1 id="productTitle">Vintage Pullover Winter Striped </h1>
+            <h2 id="productPrice">€15,00</h2>
+        </div>
+
+        <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">
+        
+        <div id="buttonsInfo" class="buttons">
+            <div class="dropdownSize">
+                <span id="SizeChart">Tabela de tamanhos</span>
+                <div class="dropdownSizeContent">
+                <p>One size only! <br>
+                    <b>Bust:</b> 110cm <br>
+                    <b>Length:</b> 65cm <br>
+                    <b>Sleeve Length: </b>Full <br>
+                    <b>Sleeve Style:</b> Regular</p>
+                </div>
+            </div>
+
+            <div class="dropdownDetail">
+                <span id="ProductDetail">Detalhes do produto</span>
+                <div class="dropdownDetailContent">
+                <p> <b>Pattern Type:</b> Argyle <br>
+                    <b>Clothing Length:</b> Regular <br>
+                    <b>Label:</b> Yes <br>
+                    <b>Washing Care:</b> Hand or machine wash maximum temperature 30, line dry, iron at low temperature	<br>			
+                    <b>Material:</b> Polyester <br>
+                    <b>Collar: </b>O-Neck <br>
+                    <b>Thickness:</b> Thick (Winter) <br>
+                    <b>Closure Type: </b>None <br>
+                    <b>Style:</b> Casual <br>
+                    <b>Material Composition:</b> Knit <br>
+                </div>
+            </div>
+        </div>
+
+        
+    </div> 
+     
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+        })
+    </script>
+</body>
+
+
+</html>
