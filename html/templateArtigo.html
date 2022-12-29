@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retroc</title>
     <link rel="stylesheet" href="../css/templateArtigo.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="templateArtigo.js"> </script>
+    
 </head>
 <body>
 
     <section>
-        <div class="swiper mySwiper container">
-            <div class="swiper-wrapper content">
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons-->
+                <input type="radio" class="radio-btn" id="radio1">
+                <input type="radio" class="radio-btn" id="radio2">
+                <input type="radio" class="radio-btn" id="radio3">
+                <!-- fim radio buttons-->
 
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img id="img-artigo2" src="../assets/imgs/artigo1.2.jpg" alt="Imagem 2 Artigo Pull-over">                    
-                        </div>
-                    </div>
+                <!-- imagens-->
+                <div class="slide first">
+                    <img id="img-artigo2" src="../assets/imgs/artigo1.2.jpg" alt="Imagem 2 Artigo Pull-over">
                 </div>
                 
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img id="img-artigo1" src="../assets/imgs/artigo1.jpeg" alt="Imagem Artigo Pull-over">
-                        </div>
-                    </div>
+                <div class="slide">
+                    <img id="img-artigo1" src="../assets/imgs/artigo1.jpeg" alt="Imagem Artigo Pull-over">
                 </div>
 
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div class="image">
-                            <img id="img-artigo1.3" src="../assets/imgs/artigo1.3.jpg" alt="Imagem Artigo Pull-over">
-                        </div>
-                    </div>
+                <div class="slide">
+                    <img id="img-artigo3" src="../assets/imgs/artigo3.jpg" alt="Imagem Artigo Pull-over">
                 </div>
+                <!-- fim imagens-->
 
+                <!-- Navigation -->
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
             </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
     </section>
 
 
@@ -95,25 +97,8 @@
 
         
     </div> 
-     
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-        })
-    </script>
+
+    <script src="templateArtigo.js"> </script>
 </body>
 
 
