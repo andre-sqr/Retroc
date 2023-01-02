@@ -1,6 +1,13 @@
+html{
+    height: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .form-container{
@@ -42,8 +49,8 @@ header{
 }
 
 #submit:hover{
-    border-color: black;
-    background-color: #C06426;
+    transition: ease 0.5s;
+    opacity: 0.7;
 }
 
 .campos-input{
@@ -133,11 +140,42 @@ header{
 footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: beige;
+    background-color: cornflowerblue;
+    margin-top: auto;
 }
 
 a{
     text-decoration: none;
+}
+
+#submit-newsletter{
+    background-color: #B06426;
+    border-radius: 0.25rem;
+    border: 0.1rem solid #B06426;
+    font-weight: bold;
+    cursor: pointer;
+    color: beige;
+    padding: 1rem;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+}
+
+#submit-newsletter:hover{
+    transition: ease 0.5s;
+    opacity: 0.7;
+}
+
+#email-newsletter{
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: beige;
+    border: 0.1rem solid beige;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+}
+
+.coluna-3 a{
+
 }
 
 @media screen and (max-width: 600px) {
