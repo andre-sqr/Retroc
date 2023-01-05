@@ -35,8 +35,8 @@ input{
     font-size: 0.8rem;
 }
 
-.campos-input input:hover{
-    border-color: black;
+.campos-input input:focus{
+    background-color: white;
 }
 
 #submit{
