@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ededed;
 }
 
 header{
@@ -21,11 +22,15 @@ header{
     justify-content: center;
 }
 
+input{
+    outline: none;
+}
+
 .campos-input input{
     padding: 1rem;
     border-radius: 0.25rem;
-    background-color: beige;
-    border: 0.1rem solid beige;
+    background-color: #ededed;
+    border: 0.1rem solid black;
     margin: 0.3125rem;
     font-size: 0.8rem;
 }
@@ -37,7 +42,7 @@ header{
 #submit{
     background-color: #B06426;
     border-radius: 0.25rem;
-    border: 0.1rem solid #B06426;
+    border: none;
     font-weight: bold;
     cursor: pointer;
     grid-column: 1 / 3;
@@ -151,7 +156,7 @@ a{
 #submit-newsletter{
     background-color: #B06426;
     border-radius: 0.25rem;
-    border: 0.1rem solid #B06426;
+    border: none;
     font-weight: bold;
     cursor: pointer;
     color: beige;
@@ -168,8 +173,8 @@ a{
 #email-newsletter{
     padding: 1rem;
     border-radius: 0.25rem;
-    background-color: beige;
-    border: 0.1rem solid beige;
+    background-color: white;
+    border: 0.1rem solid black;
     margin: 0.3125rem;
     font-size: 0.8rem;
 }
