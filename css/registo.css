@@ -1,0 +1,285 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+input{
+    outline: none;
+}
+
+.campos-input input{
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: #ededed;
+    border: 0.1rem solid black;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+}
+
+.campos-input input:focus{
+    background-color: white;
+}
+
+#submit{
+    background-color: #B06426;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    grid-column: 1 / 3;
+    grid-row: 5;
+    color: white;
+    padding: 1rem;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+    transition: ease 0.5s;
+}
+
+#submit:hover{
+    transition: ease 0.5s;
+    opacity: 0.7;
+}
+
+.campos-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.custom-radio{
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 0.125rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+
+.custom-radio input{
+    display: none;
+}
+
+.custom-radio .checkmark{
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    background-color: #B06426;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.custom-radio input:checked + .checkmark{
+    opacity: 1;
+}
+
+.gen-radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 4;
+    grid-column: 1;
+    font-weight: bold;
+}
+
+#pNome{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#uNome{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#email{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#password{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.data-nasc{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.data-nasc input{
+    width: 6.5rem;
+}
+
+.gen-radio-juntar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    margin-top: auto;
+}
+
+.coluna-2 h3{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: ease 0.5s;
+}
+
+a:hover{
+    transition: ease 0.5s;
+    color: white;
+}
+
+#submit-newsletter{
+    background-color: #B06426;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+    width: 12rem;
+    transition: ease 0.5s;
+}
+
+#submit-newsletter:hover{
+    transition: ease 0.5s;
+    opacity: 0.7;
+}
+
+#email-newsletter{
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: #ededed;
+    border: 0.1rem solid black;
+    margin: 0.3125rem;
+    font-size: 0.8rem;
+}
+
+#email-newsletter:focus{
+    background-color: white;
+}
+
+.fa{
+    padding: 1rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: ease 0.5s;
+}
+
+
+.fa-facebook{
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram{
+    background-color: #8a3ab9;
+    color: white;
+}
+
+.fa-twitter{
+    background-color: #55ACEE;
+    color: white;
+}
+
+.fa-facebook:hover{
+    transition: ease 0.5s;
+    background-color: white;
+    color: #3B5998;
+}
+
+.fa-instagram:hover{
+    transition: ease 0.5s;
+    background-color: white;
+    color: #8a3ab9;
+}
+
+.fa-twitter:hover{
+    transition: ease 0.5s;
+    background-color: white;
+    color: #55ACEE;
+}
+  
+
+@media screen and (max-width: 600px) {
+    .campos-input{
+        display: grid;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    #pNome{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    #uNome{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #email{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    #password{
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    .gen-radio{
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    .data-nasc{
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    #submit{
+        grid-row: 7;
+        grid-column: 1;
+    }
+}
