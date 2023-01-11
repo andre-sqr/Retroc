@@ -111,3 +111,73 @@ header a {
 .navbar a:hover {
     text-decoration: underline;
 }
+
+
+.frame-sections {
+    width: 100vw;
+    height: 83vh;
+}
+
+#section_profile {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 83vh;
+}
+
+.user-aside-bar {
+    display: flex;
+    justify-content: center;
+    background-color:#F8DDBF;
+}
+
+.user-info-box {
+    display: flex;
+    justify-content: center;
+}
+
+#section_pedidos {
+    display: none;
+}
+
+.pedidos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.pedidos-title {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.orders-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+    margin: 4vh;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8vw;
+    background-color: #F8DDBF;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.order-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_pagamentos {
+    display: none;
+}
+
+#section_moradas {
+    display: none;
+}
