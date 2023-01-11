@@ -9,55 +9,23 @@
     
 </head>
 <body>
-
-    <section>
-        <div class="slider">
-            <div class="slides">
-                <!-- radio buttons-->
-                <input type="radio" class="radio-btn" id="radio1">
-                <input type="radio" class="radio-btn" id="radio2">
-                <input type="radio" class="radio-btn" id="radio3">
-                <!-- fim radio buttons-->
-
-                <!-- imagens-->
-                <div class="slide first">
-                    <img id="img-artigo2" src="../assets/imgs/artigo1.2.jpg" alt="Imagem 2 Artigo Pull-over">
-                </div>
-                
-                <div class="slide">
-                    <img id="img-artigo1" src="../assets/imgs/artigo1.jpeg" alt="Imagem Artigo Pull-over">
-                </div>
-
-                <div class="slide">
-                    <img id="img-artigo3" src="../assets/imgs/artigo3.jpg" alt="Imagem Artigo Pull-over">
-                </div>
-                <!-- fim imagens-->
-
-                <!-- Navigation -->
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-
+    <div class="div-align">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="../assets/imgs/artigo1.2.jpg" alt="Primeira imagem do slideshow">
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+            <div class="slides fade">
+                <img src="../assets/imgs/artigo1.jpeg" alt="Segunda imagem do slideshow">
+            </div>
+            <div class="slides fade">
+                <img src="../assets/imgs/artigo3.jpg" alt="Terceira imagem do slideshow">
+            </div>
+            <div class="arrows-container">
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
+    </div>
     <div id="productInfo" class="productInfo">
         <div id="info-text" class="text">
             <h1 id="productTitle">Vintage Pullover Winter Striped </h1>
@@ -98,7 +66,7 @@
         
     </div> 
 
-    <script src="templateArtigo.js"> </script>
+    <script src="../js/templateArtigo.js"> </script>
 </body>
 
 

@@ -1,15 +1,20 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+let slideIndex = 1;
+showSlides(slideIndex)
+
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function showSlides(ind){
+    let slides = document.getElementsByClassName("slides");
+    if(ind > slides.length){
+        slideIndex = 1;
     }
-})
+    if(ind < 1){
+        slideIndex = slides.length;
+    }
+    for(let i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
