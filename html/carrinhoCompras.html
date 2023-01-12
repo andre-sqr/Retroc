@@ -1,0 +1,144 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teu carrinho de compras</title>
+    <link rel="stylesheet" href="../css/carrinhoCompras.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<header class="main-header_home">
+    <div class="main-header_logo">
+        <img id="logo-homepage_header" src="../assets/imgs/retroc_logo_marrom.png" alt="logo da retroc">
+    </div>
+    <div class="main-header_searchbar">
+            <input type="text" name="searchbar" id="searchbar-input" placeholder="Busque um produto...">
+        <div class="searchbar-icon">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="main-header_icons">
+        <div class="ellipse-icon" id="first-ellipse_header">
+            <div class="ellipse ellipse-color-orange"></div>
+            <div class="svg-ellipse">
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+        </div>
+        
+        <div class="ellipse-icon" id="second-ellipse_header">
+            <div class="ellipse ellipse-color-beige"></div>
+            <div class="svg-ellipse">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="heading">
+      <h1> Teu carrinho de compras </h1>
+    </div>
+
+
+    <div class="cart transition is-open">      
+      <div class="table">
+        
+        <div class="layout-inline row th">
+          <div class="col col-pro">Produto</div>
+          <div class="col col-price align-center "> 
+            Preço
+          </div>
+          <div class="col col-qty align-center">Quantidade</div>
+          <div class="col">Total</div>
+        </div>
+        
+        <div class="layout-inline row">
+          
+          <div class="col col-pro layout-inline">
+            <img src="../assets/imgs/artigo3.jpg" alt="produto 1" />
+            <p>Vintage Pullover Winter Striped</p>
+          </div>
+          
+          <div class="col col-price col-numeric align-center ">
+            <p>€15,00</p>
+          </div>
+  
+          <div class="col col-qty layout-inline">
+            <a href="#" class="qty qty-minus">-</a>
+              <input type="numeric" value="3" />
+            <a href="#" class="qty qty-plus">+</a>
+          </div>
+          
+          <div class="col col-total col-numeric">               <p>€15,00</p>
+          </div>
+        </div>
+        
+        <div class="layout-inline row row-bg2">
+  
+          <div class="col col-pro layout-inline">
+            <img src="../assets/imgs/artigo6.png" alt="artigo 2" />
+            <p>Crown Vintage Tipryn Chelsea Boot</p>
+          </div>
+          
+          <div class="col col-price col-numeric align-center ">
+            <p>€39,99</p>
+          </div>
+  
+          <div class="col col-qty  layout-inline">
+            <a href="#" class="qty qty-minus ">-</a>
+              <input type="numeric" value="1" />
+            <a href="#" class="qty qty-plus">+</a>
+          </div>
+          
+          <div class="col col-total col-numeric">
+            <p>€39,99</p>
+          </div>      
+        
+        </div>
+        
+         <div class="layout-inline row">
+          
+          <div class="col col-pro layout-inline">
+            <img src="../assets/imgs/artigo9.jpg" alt="Artigo 9" />
+            <p>To Be Worn Again Tote Bag </p>
+          </div>
+          
+          <div class="col col-price col-numeric align-center ">
+            <p>€19,99</p>
+          </div>
+  
+          <div class="col col-qty layout-inline">
+            <a href="#" class="qty qty-minus">-</a>
+              <input type="numeric" value="3" />
+            <a href="#" class="qty qty-plus">+</a>
+          </div>
+
+           <div class="col col-total col-numeric">  
+             <p>€19,99</p>
+           </div>         
+        </div>
+    
+         <div class="tf">
+           <div class="row layout-inline">
+            <div class="col"></div>
+           </div>
+           <div class="row layout-inline">
+             <div class="col">
+               <p>Entrega: €6,99</p>
+             </div>
+             <div class="col"></div>
+           </div>
+            <div class="row layout-inline">
+             <div class="col">
+               <p>Total: €79,96</p>
+             </div>
+             <div class="col"></div>
+           </div>
+         </div>         
+    </div>
+    <a href="#" class="btn btn-end">Finalizar pedido</a>
+      
+    <script src="../js/carrinhoCompras.js" ></script>
+    
+  </div>
