@@ -48,8 +48,9 @@ navMoradas.addEventListener("click", (e)=> {
 // Defining DOM variables
 
 const buttonFormUser = document.getElementById('submitformuser')
+const buttonFormAdress = document.getElementById('submitformadress')
 
-function readsInputsAndDisplays() {
+function readsInputsAndDisplaysUser() {
     const inputName = document.getElementById('personalname').value
     const inputUsername = document.getElementById('personalusername').value
     const inputEmail = document.getElementById('personalemail').value
@@ -66,5 +67,23 @@ function readsInputsAndDisplays() {
 
 buttonFormUser.addEventListener("click", (e)=> {
     e.preventDefault()
-    readsInputsAndDisplays()
+    readsInputsAndDisplaysUser()
+})
+
+function readsInputsAndDisplayAdress() {
+    const inputCity = document.getElementById('personalcity').value
+    const inputStreet = document.getElementById('personalstreet').value
+    const inputExtraAdress = document.getElementById('personalextraadress').value
+
+    const spanCityAdress = document.getElementById('city_adress')
+    spanCityAdress.innerHTML = `${inputCity}`
+    const spanStreetAdress = document.getElementById('street_adress')
+    spanStreetAdress.innerHTML = `${inputStreet}`
+    const spanExtraAdress = document.getElementById('extra_adress')
+    spanExtraAdress.innerHTML = `${inputExtraAdress}`
+}
+
+buttonFormAdress.addEventListener("click", (e)=> {
+    e.preventDefault()
+    readsInputsAndDisplayAdress()
 })
