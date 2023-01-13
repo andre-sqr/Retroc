@@ -14,7 +14,7 @@
             <img id="logo-homepage_header" src="../assets/imgs/retroc_logo_marrom.png" alt="logo da retroc">
         </div>
         <div class="main-header_text">
-                <p>Seja bem-vindo, <b>usuário</b>!</p>
+                <p>Seja bem-vindo, <span id="header_username"><b>usuário</b>!</span></p>
         </div>
         <div class="main-header_icons">
             <div class="ellipse-icon" id="first-ellipse_header">
@@ -42,30 +42,63 @@
         <section id="section_profile">
             <div class="user-aside-bar">
                 <img class="img-profile-aside" alt="user profile image" src="../assets/imgs/user_accountpage.png"></img>
-                <p><b>Nome do Usuário</b></p>
-                <p>@dummyusername</p>
-                <p>120 Pontos Retroc</p>
+                <p id="name_aside_bar"><b>Nome do Usuário</b></p>
+                <p id="username_aside_bar">@dummyusername</p>
+                <p id="email_aside_bar">Username@email.com</p>
             </div>
             <div class="user-info-box">
                 <h1>Editar informações pessoais</h1>
                 <div class="personal-info-user">
                     <form action="">
-                        <div class="formcampos">
-                            <label for="personalname">Nome:</label>
-                            <input type="text" name="personalname" id="personalname">
+                        <div class="upper-section-form">
+                            <div class="form-column">
+                                <div class="formcampos">
+                                    <label for="personalname">Nome:</label>
+                                    <input type="text" name="personalname" id="personalname">
+                                </div>
+                                <div class="formcampos">
+                                    <label for="personalusername">Username:</label>
+                                    <input type="text" name="personalusername" id="personalusername">
+                                </div>
+                                <div class="formcampos">
+                                    <label for="personalemail">Email:</label>
+                                    <input type="text" name="personalemail" id="personalemail">
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="formcampos">
+                                    <label for="personalcity">Cidade:</label>
+                                    <input type="text" name="personalcity" id="personalcity">
+                                </div>
+                                <div class="formcampos">
+                                    <label for="personalstreet">Rua:</label>
+                                    <input type="text" name="personalstreet" id="personalstreet">
+                                </div>
+                                <div class="formcampos">
+                                    <label for="personaladressextra">Complemento:</label>
+                                    <input type="text" name="personaladressextra" id="personaladressextra">
+                                </div>
+                            </div>
                         </div>
-                        <div class="formcampos">
-                            <label for="personalusername">Username:</label>
-                            <input type="text" name="personalusername" id="personalusername">
+                        <div class="bottom-section-form">
+                            <button class="submit-personal-info" id="submitformuser">Editar</button>
                         </div>
                     </form>
                 </div>
                 <h1>Meus favoritos</h1>
                 <div class="favorites-grid">
-                    <div class="box-favorite-grid"></div>
-                    <div class="box-favorite-grid"></div>
-                    <div class="box-favorite-grid"></div>
-                    <div class="box-favorite-grid"></div>
+                    <div class="box-favorite-grid">
+
+                    </div>
+                    <div class="box-favorite-grid">
+                        <img src="" alt="">
+                    </div>
+                    <div class="box-favorite-grid">
+
+                    </div>
+                    <div class="box-favorite-grid">
+
+                    </div>
                 </div>
             </div>
         </section>

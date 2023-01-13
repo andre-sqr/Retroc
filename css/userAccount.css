@@ -139,6 +139,7 @@ header a {
     align-items: center;
     font-family: 'Inter', sans-serif;
     row-gap: 4vh;
+    margin-top: 4vh;
 }
 
 .img-profile-aside {
@@ -147,9 +148,45 @@ header a {
     object-fit: cover;
 }
 
+.upper-section-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6vw;
+}
+
+.bottom-section-form {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
 .formcampos {
     display: flex;
     flex-direction: column;
+    row-gap: 1vh;
+}
+
+.formcampos input {
+    width: 18vw;
+}
+
+.submit-personal-info {
+    width: 10vw;
+    height: 4vh;
+    background-color: #B06427;
+    color: #F8DDBF;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit-personal-info:hover {
+    background-color: #546466;
 }
 
 .favorites-grid {
