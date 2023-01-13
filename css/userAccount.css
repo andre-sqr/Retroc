@@ -150,7 +150,7 @@ header a {
 
 .upper-section-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 6vw;
 }
 
@@ -199,6 +199,25 @@ header a {
     background-color: #546466;
     width: 16vh;
     height: 16vh;
+}
+
+.box-favorite-img {
+    width: 16vh;
+    height: 16vh;
+    object-fit: fill;
+}
+
+.box-favorite-img:hover {
+    transform: translateX(-1vh) translateY(-1vh);
+}
+
+#box-favorite-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Quicksand';
+    font-size: 4rem;
 }
 
 #section_pedidos {
@@ -251,4 +270,32 @@ header a {
 
 #section_moradas {
     display: none;
+}
+
+.section-moradas_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    row-gap: 2vh;
+}
+
+.adress-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.adress-box {
+    background-color: #ECAC55;
+    margin-top: 2vh;
+    padding: 1vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

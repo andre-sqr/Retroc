@@ -33,9 +33,8 @@
         </div>
     </header>
     <nav class="navbar">
-        <a href="#" id="navperfil">Perfil</a>
+        <a id="navperfil">Perfil</a>
         <a id="nav_pedidos">Pedidos</a>
-        <a href="" id="nav_pagamentos">Pagamentos</a>
         <a href="" id="nav_moradas">Moradas</a>
     </nav>
     <div class="frame-sections">
@@ -44,7 +43,7 @@
                 <img class="img-profile-aside" alt="user profile image" src="../assets/imgs/user_accountpage.png"></img>
                 <p id="name_aside_bar"><b>Nome do Usuário</b></p>
                 <p id="username_aside_bar">@dummyusername</p>
-                <p id="email_aside_bar">Username@email.com</p>
+                <p id="email_aside_bar">username@email.com</p>
             </div>
             <div class="user-info-box">
                 <h1>Editar informações pessoais</h1>
@@ -65,20 +64,6 @@
                                     <input type="text" name="personalemail" id="personalemail">
                                 </div>
                             </div>
-                            <div class="form-column">
-                                <div class="formcampos">
-                                    <label for="personalcity">Cidade:</label>
-                                    <input type="text" name="personalcity" id="personalcity">
-                                </div>
-                                <div class="formcampos">
-                                    <label for="personalstreet">Rua:</label>
-                                    <input type="text" name="personalstreet" id="personalstreet">
-                                </div>
-                                <div class="formcampos">
-                                    <label for="personaladressextra">Complemento:</label>
-                                    <input type="text" name="personaladressextra" id="personaladressextra">
-                                </div>
-                            </div>
                         </div>
                         <div class="bottom-section-form">
                             <button class="submit-personal-info" id="submitformuser">Editar</button>
@@ -88,16 +73,16 @@
                 <h1>Meus favoritos</h1>
                 <div class="favorites-grid">
                     <div class="box-favorite-grid">
-
+                        <img src="../assets/imgs/artigo8.jpg" alt="" class="box-favorite-img">
                     </div>
                     <div class="box-favorite-grid">
-                        <img src="" alt="">
+                        <img src="../assets/imgs/artigo13.png" alt="" class="box-favorite-img">
                     </div>
                     <div class="box-favorite-grid">
-
+                        <img src="../assets/imgs/artigo12.png" alt="" class="box-favorite-img">
                     </div>
-                    <div class="box-favorite-grid">
-
+                    <div class="box-favorite-grid" id="box-favorite-plus">
+                        <p>+</p>
                     </div>
                 </div>
             </div>
@@ -148,11 +133,42 @@
                 </div>
             </div>
         </section>
-        <section id="section_pagamentos">
-            <p>Secção dos pagamentos</p>
-        </section>
         <section id="section_moradas">
-            <p>Secção das moradas</p>
+            <div class="section-moradas_content">
+                <div class="adress-display">
+                    <h1>Teu endereço atual</h1>
+                    <div class="adress-box">
+                        <p><b>Cidade:</b> <span></span></p>
+                        <p><b>Rua:</b> <span></span></p>
+                        <p><b>Complemento:</b> <span></span></p>
+                    </div>
+                </div>
+                <div class="user-info-box">
+                    <h1>Editar informações de morada</h1>
+                    <div class="personal-info-user">
+                        <form action="">
+                            <div class="upper-section-form">
+                                <div class="form-column">
+                                    <div class="formcampos">
+                                        <label for="personalcity">Cidade:</label>
+                                        <input type="text" name="personalcity" id="personalcity">
+                                    </div>
+                                    <div class="formcampos">
+                                        <label for="personalstreet">Rua:</label>
+                                        <input type="text" name="personalstreet" id="personalstreet">
+                                    </div>
+                                    <div class="formcampos">
+                                        <label for="personalextraadress">Complemento:</label>
+                                        <input type="text" name="personalextraadress" id="personalextraadress">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section-form">
+                                <button class="submit-personal-info" id="submitformadress">Editar</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
         </section>
     </div>
 </body>

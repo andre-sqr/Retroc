@@ -4,12 +4,10 @@
 
 const sectionProfile = document.getElementById('section_profile')
 const sectionPedidos = document.getElementById('section_pedidos')
-const sectionPagamentos = document.getElementById('section_pagamentos')
 const sectionMoradas = document.getElementById('section_moradas')
 
 const navProfile = document.getElementById('navperfil')
 const navPedidos = document.getElementById('nav_pedidos')
-const navPagamentos = document.getElementById('nav_pagamentos')
 const navMoradas = document.getElementById('nav_moradas')
 
 let currentsection = document.getElementById('section_profile')
@@ -37,11 +35,6 @@ navProfile.addEventListener("click", (e)=> {
 navPedidos.addEventListener("click", (e)=> {
     e.preventDefault()
     changeSection(sectionPedidos)
-})
-
-navPagamentos.addEventListener("click", (e)=> {
-    e.preventDefault()
-    changeSection(sectionPagamentos)
 })
 
 navMoradas.addEventListener("click", (e)=> {
