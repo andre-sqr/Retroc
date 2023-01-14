@@ -1,5 +1,4 @@
 html {
-
     font: 62.5%/1.5em 'Inter', sans-serif;
   }
   
@@ -212,7 +211,7 @@ html {
 
 
 
-  /* MENU */
+  /* HEADER */
 
 .main-header_home {
     display: flex;
