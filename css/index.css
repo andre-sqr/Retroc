@@ -218,3 +218,24 @@ header a {
     height: 55vh;
     object-fit: cover;
 }
+
+.items-showcase h2 {
+    margin-left: 10vw;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5vw;
+}
+
+.product-box {
+    width: 25vh;
+    height: 25vh;
+    background-color:#B06426;
+}
+
+.flex-align-center {
+    display: flex;
+    justify-content: center;
+}
