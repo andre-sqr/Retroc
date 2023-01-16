@@ -1,0 +1,235 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    height: 50%;
+}
+
+.campos-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+input{
+    outline: none;
+}
+
+.campos-input input{
+    padding: 1rem;
+    border-radius: 0.25em;
+    background-color: #ededed;
+    border: 1.6px solid black;
+    margin: 0.3125em;
+    font-size: 0.8rem;
+}
+
+.campos-input input:focus{
+    background-color: white;
+}
+
+#submit-pagar{
+    background-color: #B06426;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    grid-row: 7;
+    grid-column: 1/3;
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    margin: 0.3125em;
+    font-size: 0.8rem;
+    transition: ease 0.5s;
+}
+
+#submit-pagar:hover{
+    transition: ease 0.5s;
+    opacity: 0.7;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+#metodos-pagamento{
+    grid-row: 5;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+
+#cvv{
+    width: 12em;
+    margin-right: 2em;
+}
+
+#nome{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#email{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#morada{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#cidade{
+    grid-row: 5;
+    grid-column: 1;
+}
+
+#cod-postal{
+    grid-row: 6;
+    grid-column: 1;
+}
+
+#nome-cartao{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#num-cartao{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#ano-mes{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#ano-mes input{
+    width: 12em;
+}
+
+.icons-container{
+    font-size: 28px;
+}
+
+.fa-cc-visa{
+    color: navy;
+}
+
+.fa-cc-mastercard{
+    color: red;
+}
+
+.fa-cc-paypal{
+    color: #009cde;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #546466;
+    margin-top: auto;
+    height: fit-content;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    transition: ease 0.5s;
+}
+
+footer a:hover{
+    transition: ease 0.5s;
+    color: white;
+}
+
+#submit-newsletter{
+    background-color: #B06426;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    margin: 0.3125em;
+    font-size: 0.8rem;
+    width: 100%;
+    transition: ease 0.5s;
+}
+
+#submit-newsletter:hover{
+    transition: ease 0.5s;
+    opacity: 0.7;
+}
+
+#email-newsletter{
+    padding: 1em;
+    border-radius: 4px;
+    background-color: #ededed;
+    border: 1.6px solid black;
+    margin: 0.3125em;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+#email-newsletter:focus{
+    background-color: white;
+}
+
+footer .fa{
+    padding: 1em;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: ease 0.7s;
+}
+
+
+.fa-facebook{
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram{
+    background-color: #8a3ab9;
+    color: white;
+}
+
+.fa-twitter{
+    background-color: #55ACEE;
+    color: white;
+}
+
+.fa-facebook:hover{
+    transition: ease 0.7s;
+    background-color: white;
+    color: #3B5998;
+}
+
+.fa-instagram:hover{
+    transition: ease 0.7s;
+    background-color: white;
+    color: #8a3ab9;
+}
+
+.fa-twitter:hover{
+    transition: ease 0.7s;
+    background-color: white;
+    color: #55ACEE;
+}
