@@ -11,10 +11,6 @@ html {
 body {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-column: 2;
-    grid-row: 1;
-    grid-template-areas: imgContainer, productInfo;
-    justify-items: center;
     height: 100vh;
 }
 
@@ -30,7 +26,8 @@ body {
     margin-top: 10vh;
 }
 
-div#productInfo {
+#productInfo {
+    grid-column: 2;
     margin-top: 25vh;
 }
 
@@ -55,118 +52,12 @@ h1 {
     background-color: #546466;
 }
 
-div#buttonsInfo {
+#buttonsInfo {
     display: grid;
     grid-column: 2;
     grid-row: 1;
     grid-template-columns: 12vw 12vw;
     grid-template-areas: dropdownSize, dropdownDetail;
-}
-
-
-____________________________Carroussel imgs_________________________
-
-section {
-    display: flex;
-    width: 50vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 800px;
-    overflow: hidden; /* só a primeira imagem fica aparecendo  */
-}
-
-.slides {
-    width: 400%;
-    height: 700px;  /* mesmo tamanho do slider  */
-    display: flex;
-
-}
-
-.slides input {
-    display: none;   /* todos os slides dentro de cada input some  */
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 800px;   /* mesmo tamanho do slider  */
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;    /* mesmo tamanho do slider  */
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #B06426;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 10px;
-}
-
-.manual-btn:hover {
-    background-color: #B06426;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-.navigation-auto div {
-    border: 2px solid #B06426;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#img-artigo3 {
-    height: 600px;
-    width: 400px;
-    margin-top: 30px;
-    margin-left: 110px;
-}
-
-img {
-    object-fit: cover;
-    margin-left: 110px;
 }
 
 ____________________________Dropdowns ______________________________
@@ -203,4 +94,61 @@ ____________________________Dropdowns ______________________________
 
 .dropdownDetail:hover .dropdownDetailContent {
     display: block;
+}
+
+____________________________Slider_________________________
+
+.slideshow-container{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+}
+
+.div-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides{
+    display: none;
+}
+
+.slides img{
+    height: 600px;
+    width: 600px;
+}
+
+.arrows-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anterior, .proximo{
+    cursor: pointer;
+    color: white;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: 18px;
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.anterior:hover, .proximo:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
 }
