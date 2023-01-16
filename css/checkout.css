@@ -147,11 +147,6 @@ footer{
     height: fit-content;
 }
 
-.coluna-2 h3{
-    display: flex;
-    justify-content: center;
-}
-
 footer a{
     text-decoration: none;
     color: black;
