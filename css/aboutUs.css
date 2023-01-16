@@ -23,15 +23,16 @@ h2 {
     align-items: center;
 }
 
-div.titulo-img {
-    background-image: url('../assets/imgs/fundo-about-us.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 60vw 70vh;
+#imgInicio {
+    display: flexbox;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
 }
 
 #tituloSobre {
-    padding-top: 80vh;
+    padding-top: 10vh;
     text-align: center;
     padding-bottom: 7vh;
     color: #B06426;
@@ -52,46 +53,37 @@ div.titulo-img {
 }
 
 @media screen and (max-width: 360px){
-    div.titulo-img {
-        background-size: 80vw auto;
-    }
-    #tituloSobre {
-        padding-top: 40vh;
-    }
     #sobre, .subtitulo, #endereco, #redesSociais {
         text-align: justify;
         margin-left: 15vw;
         margin-right: 15vw;
     }
+    #imgInicio {
+        width: 100vw;
+        height: auto;
+    }
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 361px) and (max-width: 1024px) {
-    div.titulo-img {
-        background-size: 80vw auto;
-    }
-    #tituloSobre {
-        padding-top: 45vh;
-    }
     #sobre, .subtitulo, #endereco, #redesSociais {
         text-align: justify;
         margin-left: 10vw;
         margin-right: 10vw;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    #imgInicio {
+        width: 100vw;
+        height: auto;
     }
 }
 
+
 @media screen and (min-width: 1024px) and (max-width: 2010px){
-    div.titulo-img {
-        background-size: 80vw auto;
-    }
-    #tituloSobre {
-        padding-top: 70vh;
-    }
     #sobre, .subtitulo, #endereco, #redesSociais {
         text-align: justify;
         margin-left: 10vw;
