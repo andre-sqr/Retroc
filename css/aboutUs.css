@@ -18,6 +18,7 @@ h2 {
 .img {
     height: 20vh;
     width: 20vw;
+    object-fit: fill;
     display: flexbox;    
     align-items: center;
 }
@@ -52,7 +53,7 @@ div.titulo-img {
 
 @media screen and (max-width: 360px){
     div.titulo-img {
-        background-size: 80vw 30vh;
+        background-size: 80vw auto;
     }
     #tituloSobre {
         padding-top: 40vh;
@@ -69,10 +70,10 @@ div.titulo-img {
 
 @media screen and (min-width: 361px) and (max-width: 1024px) {
     div.titulo-img {
-        background-size: 80vw 55vh;
+        background-size: 80vw auto;
     }
     #tituloSobre {
-        padding-top: 65vh;
+        padding-top: 45vh;
     }
     #sobre, .subtitulo, #endereco, #redesSociais {
         text-align: justify;
@@ -86,7 +87,7 @@ div.titulo-img {
 
 @media screen and (min-width: 1024px) and (max-width: 2010px){
     div.titulo-img {
-        background-size: 80vw 65vh;
+        background-size: 80vw auto;
     }
     #tituloSobre {
         padding-top: 70vh;
