@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="checkout.html" autocomplete="off" id="form-checkout" method="post">
+            <div class="campos-input">
+                <h3>Endereço para envio</h3>
+                <input type="text" placeholder="Nome" required id="nome">
+                <input type="email" placeholder="Email" required id="email">   
+                <input type="text" placeholder="Morada" required id="morada">
+                <input type="text" placeholder="Cidade" required id="cidade">
+                <input type="text" placeholder="Código Postal" required id="cod-postal">
+                <h3>Pagamento</h3>
+                <div id="metodos-pagamento">
+                    <input type="text" placeholder="CVV/CVC" required maxlength="3" id="cvv">
+                    <div class="icons-container">
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <a class="fa fa-cc-paypal" href="https://www.paypal.com/pt/home"></a>
+                    </div>
+                </div>
+                <input type="text" placeholder="Nome no cartão" required id="nome-cartao">
+                <input type="text" placeholder="Número do cartão" required id="num-cartao">   
+                <div id="ano-mes">
+                    <input type="text" placeholder="Mês Expiração (MM)" required maxlength="2" id="mes-exp">
+                    <input type="text" placeholder="Ano Expiração (AAAA)" required maxlength="4" id="ano-exp">
+                </div>
+                <button id="submit-pagar">Pagar</button>
+            </div>
+        </form>
+    </div> 
+    <footer>
+        <div class="coluna-1">
+            <h3>Links úteis</h3>
+            <a href="#">Sobre nós</a><br>
+            <a href="#">Contactos</a><br>
+            <a href="#">Formulário</a>
+        </div>
+        <div class="coluna-2">
+            <h3>Newsletter</h3>
+            <form action="checkout.html" autocomplete="off" method="post">
+                <input type="email" placeholder="Email" required id="email-newsletter"><br>
+                <button id="submit-newsletter">Subscrever</button>
+            </form>
+        </div>
+        <div class="coluna-3">
+            <h3>Redes Sociais</h3>
+            <div>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
