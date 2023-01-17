@@ -11,4 +11,7 @@
         width: 20vw;
     }
 
+    .main-header_text {
+        display: none;
+    }
 }
