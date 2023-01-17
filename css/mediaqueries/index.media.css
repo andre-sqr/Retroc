@@ -1,0 +1,34 @@
+@media (max-width: 425px) {
+    .categories-div {
+        width: 100%;
+    }
+
+    .categories-section {
+        grid-template-columns: 1fr;
+        row-gap: 0%;
+        column-gap: 0%;
+    }
+
+    .category-box {
+        width: 50vh;
+        height: 50vh;
+        font-size: 1rem;
+    }
+
+    .slogan_img {
+        width: 80%;
+    }
+
+    .slogan-bottom-text {
+        font-size: 1.5rem;
+    }
+
+    .categories-and-slogan_section {
+        grid-template-columns: 1fr;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5vw;
+    }
+}
