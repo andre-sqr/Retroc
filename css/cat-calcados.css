@@ -18,40 +18,29 @@ h2 {
     margin-top: 5vh;
 }
 
-.imagemProduto {
-    position: relative;
-}
-/*
 .overlay {
-    opacity: 0%;
+    opacity: 0;
     position: absolute;
-    top: 24vh;
-    left: 3vw;
-    bottom: 0;
-    right: 0;
-    width: 346px;
-    height: 350px;
+    top: 169.5px;
+    width: 25vw; 
+    height: 55vh;   
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.overlay:hover {
+.imagemProduto:hover, .overlay:hover {
     background-color: #546466;
     color: white;
-    opacity: 0.8;
-    visibility: visible;
-}  */
-
-.imagemProduto {
-    background-color: #546466;
-}
-
-.imagemProduto:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
+}  
+
+p.textoOverlay {
+    margin: 10px;
 }
+
 
 .produtos {
     margin-left: 20px;
@@ -68,9 +57,9 @@ h2 {
 }
 
 .imagemProduto {
-    height: 50vh;
-    width: auto;
-    object-fit: fill;
+    height: 55vh;
+    width: 25vw;
+    object-fit: cover;
 }
 
 p.preco {
