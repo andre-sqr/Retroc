@@ -14,5 +14,24 @@
         height: 50vw;
         object-fit: cover;
     }
+
+    #info-text {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #productTitle {
+        text-align: center;
+    }
+
+    #buttonsInfo {
+        column-gap: 30vw;
+    }
+
+    #addToCartButton {
+        width: 70vw;
+    }
     
 }
