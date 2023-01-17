@@ -1,0 +1,18 @@
+@media (max-width: 425px) {
+    .content-article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slideshow-container{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .slides img{
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+    }
+    
+}
