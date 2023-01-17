@@ -86,7 +86,7 @@ body {
 .ellipse {
     position: absolute;
     height: 5vh;
-    width: 2.5vw;
+    width: 5vh;
     border-radius: 50%;
 }
 
