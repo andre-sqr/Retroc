@@ -1,0 +1,202 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    color: #B06426;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+#divider {
+    color: #B06426;
+    width: 100vw;
+    margin-left: -10px;
+}
+
+.inicio {
+    margin-top: 5vh;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 176px;
+    width: 25vw; 
+    height: 55vh;   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemProduto:hover, .overlay:hover {
+    background-color: #546466;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}  
+
+p.textoOverlay {
+    margin: 10px;
+}
+
+
+.produtos {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.produtosInfo {
+    flex-direction: column;
+}
+
+.imagemProduto {
+    height: 55vh;
+    width: 25vw;
+    object-fit: cover;
+}
+
+p.preco {
+    margin-top: -1vh;
+}
+
+p.cor {
+    color: #B3C9A9;
+    margin-top: -2vh;
+}
+
+@media screen and (max-width:1000px) {
+    .produtos {
+        /*display: block;*/
+        flex-wrap: wrap;
+    }
+    .imagemProduto {
+        height: 55vh;
+        width: auto;
+        margin-top: 10px;
+    }
+}
+
+
+ /* -------------------------------------------------------------------------- */
+/* HEADER */
+
+.main-header_home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    margin-top: 1.2vh;
+    margin-bottom: 0.8vh;
+}
+
+.main-header_logo {
+    margin-left: 2%;
+    width: 10vw;
+    height: 7vh;
+    object-fit: cover;
+}
+
+#logo-homepage_header {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header_searchbar {
+    position: relative;
+    border-radius: 25px;
+    border: 1px solid grey;
+    outline: 0;
+    height: 4vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+}
+
+#searchbar-input {
+    position: absolute;
+    border-radius: 25px;
+    border: 0px;
+    outline: 0;
+    height: 3.5vh;
+    width: 16.5vw;
+    left: 3%;
+}
+
+#searchbar-input:focus {
+    border: 0px;
+}
+
+.searchbar-icon {
+    position: absolute;
+    left: 89%;
+    width: 3vw;
+    height: 2.5vh;
+    object-fit: cover;
+}
+
+.main-header_icons {
+    width: 6vw;
+    height: 7vh;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ellipse-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse {
+    position: absolute;
+    height: 5vh;
+    width: 2.5vw;
+    border-radius: 50%;
+}
+
+.ellipse-color-orange {
+    background-color: #ECAC55;
+    margin-right: 60%;
+}
+
+.ellipse-color-orange:hover {
+    background-color: #B3C9A9;
+}
+
+.ellipse-color-beige {
+    background-color: #F8DDBF;
+}
+
+.ellipse-color-beige:hover {
+    background-color: #546466;
+}
+
+.svg-ellipse {
+    position: absolute;
+}
+
+#first-ellipse_header {
+    margin-right: 55%;
+}
+
+#second-ellipse_header {
+    margin-right: 30%;
+}
+
+.main-img_homepage {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
