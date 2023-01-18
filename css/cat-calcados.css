@@ -21,8 +21,8 @@ h2 {
 .overlay {
     opacity: 0;
     position: absolute;
-    top: 169.5px;
-    width: 25vw; 
+    top: 176px;
+    width: 30vw; 
     height: 55vh;   
     text-align: center;
     display: flex;
@@ -58,7 +58,7 @@ p.textoOverlay {
 
 .imagemProduto {
     height: 55vh;
-    width: 25vw;
+    width: 30vw;
     object-fit: cover;
 }
 

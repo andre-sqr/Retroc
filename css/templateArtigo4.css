@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 
@@ -47,12 +47,13 @@ h1 {
 
 #addToCartButton {
     background-color: #B06426;
-    width: 29vw;
+    width: 32vw;
     padding: 15px 20px;
     border: none;
     color: white;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    font-size: medium;
 }
 
 #addToCartButton:hover {
@@ -127,8 +128,8 @@ ____________________________Slider_________________________
 }
 
 .slides img{
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
     object-fit: cover;
 }
 
