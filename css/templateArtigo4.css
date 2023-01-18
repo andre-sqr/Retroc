@@ -1,19 +1,17 @@
 html {
     font-family: 'Inter', sans-serif;
-    height: 100%;
   }
 
-
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-.grid-container{
+body {
     display: grid;
     grid-template-columns: 50vw 50vw;
+    height: 100vh;
 }
 
 #img-artigo1 {
@@ -62,15 +60,14 @@ h1 {
     grid-template-areas: dropdownSize, dropdownDetail;
 }
 
-/*____________________________Dropdowns ______________________________*/
+____________________________Dropdowns ______________________________
 
 
 .dropdownSize, .dropdownDetail {
     position: relative;
     display: inline-block;
-    width: 9.1em;
 }
-
+  
 .dropdownSizeContent {
     display: none;
     position: absolute;
@@ -99,7 +96,7 @@ h1 {
     display: block;
 }
 
-/*____________________________Slider_________________________*/
+____________________________Slider_________________________
 
 .slideshow-container{
     display: flex;
@@ -123,6 +120,11 @@ h1 {
 .slides img{
     height: 600px;
     width: 600px;
+}
+
+.arrows-container{
+    display: flex;
+    justify-content: space-between;
 }
 
 .anterior, .proximo{
@@ -149,110 +151,4 @@ h1 {
 @keyframes fade{
     from{opacity: .4}
     to{opacity: 1}
-}
-
-/*____________________________Footer_________________________*/
-
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #546466;
-    margin-top: auto;
-    height: fit-content;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-    transition: ease 0.5s;
-}
-
-footer a:hover{
-    transition: ease 0.5s;
-    color: white;
-}
-
-#submit-newsletter{
-    background-color: #B06426;
-    border-radius: 4px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    color: white;
-    padding: 1em;
-    margin: 0.3125em;
-    font-size: 0.8rem;
-    width: 100%;
-    transition: ease 0.5s;
-}
-
-#submit-newsletter:hover{
-    transition: ease 0.5s;
-    opacity: 0.7;
-}
-
-#email-newsletter{
-    padding: 1em;
-    border-radius: 4px;
-    background-color: #ededed;
-    border: 1.6px solid black;
-    margin: 0.3125em;
-    font-size: 0.8rem;
-    width: 100%;
-}
-
-#email-newsletter:focus{
-    background-color: white;
-}
-
-footer .fa{
-    padding: 1em;
-    width: 16px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: ease 0.7s;
-}
-
-
-.fa-facebook{
-    background-color: #3B5998;
-    color: white;
-}
-
-.fa-instagram{
-    background-color: #8a3ab9;
-    color: white;
-}
-
-.fa-twitter{
-    background-color: #55ACEE;
-    color: white;
-}
-
-.fa-facebook:hover{
-    transition: ease 0.7s;
-    background-color: white;
-    color: #3B5998;
-}
-
-.fa-instagram:hover{
-    transition: ease 0.7s;
-    background-color: white;
-    color: #8a3ab9;
-}
-
-.fa-twitter:hover{
-    transition: ease 0.7s;
-    background-color: white;
-    color: #55ACEE;
-}
-
-input{
-    outline: none;
-}
-
-footer h3{
-    display: flex;
-    justify-content: center;
 }

@@ -1,118 +1,94 @@
 html {
     font-family: 'Inter', sans-serif;
-  }
-
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
 }
 
 h2 {
-    text-align: left;
     color: #B06426;
-    margin-bottom: 4vh;
-    margin-top: 7vh;
-} 
- 
-.img {
-    height: 20vh;
-    width: 20vw;
-    object-fit: fill;
-    display: flexbox;    
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+#divider {
+    color: #B06426;
+    width: 100vw;
+    margin-left: -10px;
+}
+
+.inicio {
+    margin-top: 5vh;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 176px;
+    width: 25vw; 
+    height: 55vh;   
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#imgInicio {
-    display: flexbox;
-    align-items: center;
-    width: 100vw;
-    height: 60vh;
+.imagemProduto:hover, .overlay:hover {
+    background-color: #546466;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}  
+
+p.textoOverlay {
+    margin: 10px;
+}
+
+
+.produtos {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.produtosInfo {
+    flex-direction: column;
+}
+
+.imagemProduto {
+    height: 55vh;
+    width: 25vw;
     object-fit: cover;
 }
 
-#tituloSobre {
-    padding-top: 10vh;
-    text-align: center;
-    padding-bottom: 7vh;
-    color: #B06426;
+p.preco {
+    margin-top: -1vh;
 }
 
-#sobre, .subtitulo, #endereco, #redesSociais {
-    text-align: justify;
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-
-#endereco, #redesSociais, #sobre {
+p.cor {
+    color: #B3C9A9;
     margin-top: -2vh;
 }
 
-#redesSociais {
-    margin-bottom: 15vh;
-}
-
-@media screen and (max-width: 360px){
-    #sobre, .subtitulo, #endereco, #redesSociais {
-        text-align: justify;
-        margin-left: 15vw;
-        margin-right: 15vw;
+@media screen and (max-width:1000px) {
+    .produtos {
+        /*display: block;*/
+        flex-wrap: wrap;
     }
-    #imgInicio {
-        width: 100vw;
-        height: auto;
-    }
-    h1 {
-        font-size: 20px;
+    .imagemProduto {
+        height: 55vh;
+        width: auto;
+        margin-top: 10px;
     }
 }
-
-@media screen and (min-width: 361px) and (max-width: 1024px) {
-    #sobre, .subtitulo, #endereco, #redesSociais {
-        text-align: justify;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    #imgInicio {
-        width: 100vw;
-        height: auto;
-    }
-}
-
-
-@media screen and (min-width: 1024px) and (max-width: 2010px){
-    #sobre, .subtitulo, #endereco, #redesSociais {
-        text-align: justify;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 17px;
-    }
-    h2 {
-        font-size: 19px;
-    }
-}
-
-
-
-
-
-
-
-
 
 
  /* -------------------------------------------------------------------------- */
 /* HEADER */
 
- .main-header_home {
+.main-header_home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +162,7 @@ h2 {
 .ellipse {
     position: absolute;
     height: 5vh;
-    width: 5vh;
+    width: 2.5vw;
     border-radius: 50%;
 }
 

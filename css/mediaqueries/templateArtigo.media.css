@@ -1,0 +1,37 @@
+@media (max-width: 425px) {
+    .content-article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slideshow-container{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .slides img{
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    #info-text {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    #productTitle {
+        text-align: center;
+    }
+
+    #buttonsInfo {
+        column-gap: 30vw;
+    }
+
+    #addToCartButton {
+        width: 70vw;
+    }
+    
+}

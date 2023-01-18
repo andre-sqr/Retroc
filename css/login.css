@@ -74,6 +74,8 @@ form {
     flex-direction: column;
     align-content: center;
     margin-left: -35vw;
+    background-color: white;
+    padding: 25px;
 }
 
 img.fundo {
@@ -92,4 +94,18 @@ img.logo {
     background: url(../assets/imgs/logo\ projeto\ tw_logo\ marrom.png) no-repeat bottom left scroll;
     background-position: left;
     background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 650px){
+    input.email, input.password, .button {
+        width: 175px;
+    }
+    #esquecestePassword {
+        font-size: small;
+    }
+    form {
+        display: flex;
+        align-content: center;
+    }
 }
