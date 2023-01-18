@@ -6,68 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retroc</title>
     <link rel="stylesheet" href="../css/templateArtigo.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="div-align">
-        <div class="slideshow-container">
-            <div class="slides fade">
-                <img src="../assets/imgs/artigo1.2.jpg" alt="Primeira imagem do slideshow">
-            </div>
-            <div class="slides fade">
-                <img src="../assets/imgs/artigo1.jpeg" alt="Segunda imagem do slideshow">
-            </div>
-            <div class="slides fade">
-                <img src="../assets/imgs/artigo2.jpg" alt="Terceira imagem do slideshow">
-            </div>
-            <div class="arrows-container">
+    <div class="grid-container">
+        <div class="div-align">
+            <div class="slideshow-container">
                 <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo1.2.jpg" alt="Primeira imagem do slideshow">
+                </div>
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo1.jpeg" alt="Segunda imagem do slideshow">
+                </div>
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo2.jpg" alt="Terceira imagem do slideshow">
+                </div>
                 <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
-    </div>
-    <div id="productInfo" class="productInfo">
-        <div id="info-text" class="text">
-            <h1 id="productTitle">Vintage Pullover Winter Striped </h1>
-            <h2 id="productPrice">€15,00</h2>
-        </div>
-
-        <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">
-        
-        <div id="buttonsInfo" class="buttons">
-            <div class="dropdownSize">
-                <span id="SizeChart">Tabela de tamanhos</span>
-                <div class="dropdownSizeContent">
-                <p>One size only! <br>
-                    <b>Bust:</b> 110cm <br>
-                    <b>Length:</b> 65cm <br>
-                    <b>Sleeve Length: </b>Full <br>
-                    <b>Sleeve Style:</b> Regular</p>
-                </div>
+        <div id="productInfo" class="productInfo">
+            <div id="info-text" class="text">
+                <h1 id="productTitle">Vintage Pullover Winter Striped </h1>
+                <h2 id="productPrice">€15,00</h2>
             </div>
-
-            <div class="dropdownDetail">
-                <span id="ProductDetail">Detalhes do produto</span>
-                <div class="dropdownDetailContent">
-                <p> <b>Pattern Type:</b> Argyle <br>
-                    <b>Clothing Length:</b> Regular <br>
-                    <b>Label:</b> Yes <br>
-                    <b>Washing Care:</b> Hand or machine wash maximum temperature 30, line dry, iron at low temperature	<br>			
-                    <b>Material:</b> Polyester <br>
-                    <b>Collar: </b>O-Neck <br>
-                    <b>Thickness:</b> Thick (Winter) <br>
-                    <b>Closure Type: </b>None <br>
-                    <b>Style:</b> Casual <br>
-                    <b>Material Composition:</b> Knit <br>
+            <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">    
+            <div id="buttonsInfo" class="buttons">
+                <div class="dropdownSize">
+                    <span id="SizeChart">Tabela de tamanhos</span>
+                    <div class="dropdownSizeContent">
+                        <p>One size only! <br>
+                            <b>Bust:</b> 110cm <br>
+                            <b>Length:</b> 65cm <br>
+                            <b>Sleeve Length: </b>Full <br>
+                            <b>Sleeve Style:</b> Regular</p>
+                    </div>
+                </div>
+                <div class="dropdownDetail">
+                    <span id="ProductDetail">Detalhes do produto</span>
+                    <div class="dropdownDetailContent">
+                        <p> <b>Pattern Type:</b> Argyle <br>
+                            <b>Clothing Length:</b> Regular <br>
+                            <b>Label:</b> Yes <br>
+                            <b>Washing Care:</b> Hand or machine wash maximum temperature 30, line dry, iron at low temperature	<br>			
+                            <b>Material:</b> Polyester <br>
+                            <b>Collar: </b>O-Neck <br>
+                            <b>Thickness:</b> Thick (Winter) <br>
+                            <b>Closure Type: </b>None <br>
+                            <b>Style:</b> Casual <br>
+                            <b>Material Composition:</b> Knit <br>
+                    </div>
                 </div>
             </div>
         </div>
-
-        
     </div> 
-
+    <footer>
+        <div class="coluna-1">
+            <h3>Links úteis</h3>
+            <a href="aboutUs.html">Sobre nós</a><br>
+            <a href="formulario.html">Formulário</a><br>
+            <a href="registo.html">Criar Conta</a>
+        </div>
+        <div class="coluna-2">
+            <h3>Newsletter</h3>
+            <form action="registo.html" autocomplete="off" method="post">
+                <input type="email" placeholder="Email" required maxlength="50" id="email-newsletter"><br>
+                <button id="submit-newsletter">Subscrever</button>
+            </form>
+        </div>
+        <div class="coluna-3">
+            <h3>Redes Sociais</h3>
+            <div>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </footer>
     <script src="../js/templateArtigo.js"> </script>
 </body>
-
-
 </html>
