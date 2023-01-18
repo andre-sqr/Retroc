@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
     <title>Log in</title>
+    <script src="../js/login.js"></script>
 </head>
 
 
@@ -17,10 +18,10 @@
         <br>
         <h2>Log in</h2>
         Email: <br>
-        <input type="email" class="email" placeholder="example@email.com" required> <br>
+        <input type="email" class="email" placeholder="example@email.com"  id="email_login" required> <br>
         Password: <br>
         <input type="password" class="password" placeholder="password" required> <br>
-        <input type="submit" name="buttonSubmit" class="button" value="Log in"> <br>
+        <input type="submit" name="buttonSubmit" class="button" value="Log in" onclick=login()> <br>
         <p id="esquecestePassword"><a href="../html/esquecestePassword.html"> Esqueceste a password?</p>
         <br>
     </form>
