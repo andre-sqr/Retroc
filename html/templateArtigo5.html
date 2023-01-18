@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis Cariuma</title>
+    <link rel="stylesheet" href="../css/templateArtigo5.css">
+    <link rel="stylesheet" href="../css/mediaqueries/templateArtigo.media.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header class="main-header_home">
+        <div class="main-header_logo">
+            <img id="logo-homepage_header" src="../assets/imgs/retroc_logo_marrom.png" alt="logo da retroc">
+        </div>
+        <div class="main-header_searchbar">
+                <input type="text" name="searchbar" id="searchbar-input" placeholder="Busque um produto...">
+            <div class="searchbar-icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="main-header_icons">
+            <div class="ellipse-icon" id="first-ellipse_header">
+                <div class="ellipse ellipse-color-orange"></div>
+                <div class="svg-ellipse">
+                    <a href="../html/login.html"><ion-icon name="person-outline"></ion-icon></a>
+                </div>
+            </div>
+            
+            <div class="ellipse-icon" id="second-ellipse_header">
+                <div class="ellipse ellipse-color-beige"></div></a>
+                <div class="svg-ellipse">
+                    <a href="../html/carrinhoCompras.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-article">
+        <div class="div-align">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo5.jpg" alt="Primeira imagem do slideshow">
+                </div>
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo5.2.jpg" alt="Segunda imagem do slideshow">
+                </div>
+                <div class="slides fade">
+                    <img src="../assets/imgs/artigo5.3.jpg" alt="Terceira imagem do slideshow">
+                </div>
+                <div class="arrows-container">
+                    <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div id="productInfo" class="productInfo">
+            <div id="info-text" class="text">
+                <h1 id="productTitle">Tenis Cariuma Pro White/Vintage White</h1>
+                <h2 id="productPrice">€50,00</h2>
+            </div>
+    
+            <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">
+            
+            <div id="buttonsInfo" class="buttons">
+                <div class="dropdownSize">
+                    <span id="SizeChart">Tabela de tamanhos</span>
+                    <div class="dropdownSizeContent">
+                    <p> 40-46 <br>
+                       
+                    </div>
+                </div>
+    
+                <div class="dropdownDetail">
+                    <span id="ProductDetail">Detalhes do produto</span>
+                    <div class="dropdownDetailContent">
+                    <p>
+                        <b>Cor:</b>	Branco Vintage <br>
+                        <b>Composição:</b>	Pele, Camurça e Borracha
+                    </p>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div> 
+    </div>
+
+    <script src="../js/templateArtigo.js"> </script>
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+@media screen and (max-width:1000px) {
+    .produtos {
+        /*display: block;*/
+        flex-wrap: wrap;
+    }
+    .imagemProduto {
+        height: 55vh;
+        width: auto;
+        margin-top: 10px;
+    }
+}
