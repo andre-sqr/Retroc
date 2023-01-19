@@ -144,7 +144,7 @@ footer{
     justify-content: space-evenly;
     background-color: #546466;
     margin-top: auto;
-    height: fit-content;
+    height: 11em;
 }
 
 footer a{
@@ -232,4 +232,116 @@ footer .fa{
     transition: ease 0.7s;
     background-color: white;
     color: #55ACEE;
+}
+
+@media screen and (max-width: 700px), screen and (max-height: 700px){
+    .campos-input{
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+    .form-container{
+        height: fit-content;
+    }
+
+    #titulo-1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #metodos-pagamento{
+        grid-row: 11;
+        grid-column: 1;
+    }
+    
+    #nome{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    #email{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    #morada{
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #cidade{
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #cod-postal{
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    #titulo-2{
+        grid-row: 7;
+        grid-column: 1;
+    }
+    
+    #nome-cartao{
+        grid-row: 8;
+        grid-column: 1;
+    }
+    
+    #num-cartao{
+        grid-row: 9;
+        grid-column: 1;
+    }
+    
+    #ano-mes{
+        grid-row: 10;
+        grid-column: 1;
+    }
+
+    #submit-pagar{
+        grid-row: 12;
+        grid-column: 1;
+    }
+    
+    #cvv{
+        margin-right: 0.8em;
+        width: 10em;
+    }
+
+    #ano-mes input{
+        width: 10em;
+    }
+
+    .icons-container{
+        font-size: 18px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .coluna-1,.coluna-2,.coluna-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coluna-1,.coluna-2{
+        flex-direction: column;
+    }
+
+    .fa{
+        margin: 0.5em;
+    }
+
+    .coluna-3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data-nasc input{
+        width: 6.5em;
+    }
 }
