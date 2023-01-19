@@ -152,7 +152,7 @@ footer{
     justify-content: space-evenly;
     background-color: #546466;
     margin-top: auto;
-    height: fit-content;
+    height: 11em;
 }
 
 h3{
@@ -293,31 +293,7 @@ footer a:hover{
         grid-row: 7;
         grid-column: 1;
     }
-
-    footer{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .coluna-1,.coluna-2,.coluna-3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .coluna-1,.coluna-2{
-        flex-direction: column;
-    }
-
-    .fa{
-        margin: 0.5em;
-    }
-
-    .coluna-3{
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .data-nasc input{
         width: 6.5em;
     }

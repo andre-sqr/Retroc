@@ -100,7 +100,7 @@ footer{
     justify-content: space-evenly;
     background-color: #546466;
     margin-top: auto;
-    height: fit-content;
+    height: 11em;
 }
 
 h3{
@@ -199,29 +199,5 @@ footer a:hover{
 
     .form-container{
         height: fit-content;
-    }
-
-    footer{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .coluna-1,.coluna-2,.coluna-3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .coluna-1,.coluna-2{
-        flex-direction: column;
-    }
-
-    .fa{
-        margin: 0.5em;
-    }
-
-    .coluna-3{
-        display: flex;
-        flex-direction: column;
     }
 }

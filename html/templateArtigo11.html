@@ -5,61 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retroc</title>
-    <link rel="stylesheet" href="../css/templateArtigo.css">
+    <link rel="stylesheet" href="../css/templateArtigo2.css">
+    <link rel="stylesheet" href="../css/mediaqueries/templateArtigo.media.css">
+    <link rel="stylesheet" href="../css/mediaqueries/header.media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
-    <div class="grid-container">
+    <header class="main-header_home">
+        <div class="main-header_logo">
+            <img id="logo-homepage_header" src="../assets/imgs/retroc_logo_marrom.png" alt="logo da retroc">
+        </div>
+        <div class="main-header_searchbar">
+                <input type="text" name="searchbar" id="searchbar-input" placeholder="Busque um produto...">
+            <div class="searchbar-icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="main-header_icons">
+            <div class="ellipse-icon" id="first-ellipse_header">
+                <div class="ellipse ellipse-color-orange"></div>
+                <div class="svg-ellipse">
+                    <a href="../html/login.html"><ion-icon name="person-outline"></ion-icon></a>
+                </div>
+            </div>
+            
+            <div class="ellipse-icon" id="second-ellipse_header">
+                <div class="ellipse ellipse-color-beige"></div></a>
+                <div class="svg-ellipse">
+                    <a href="../html/carrinhoCompras.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-article">
         <div class="div-align">
             <div class="slideshow-container">
                 <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
                 <div class="slides fade">
-                    <img src="../assets/imgs/artigo1.2.jpg" alt="Primeira imagem do slideshow">
+                    <img src="../assets/imgs/artigo11.jpg" alt="Primeira imagem do slideshow">
                 </div>
                 <div class="slides fade">
-                    <img src="../assets/imgs/artigo1.jpeg" alt="Segunda imagem do slideshow">
+                    <img src="../assets/imgs/artigo11.2.jpg" alt="Segunda imagem do slideshow">
                 </div>
                 <div class="slides fade">
-                    <img src="../assets/imgs/artigo2.jpg" alt="Terceira imagem do slideshow">
+                    <img src="../assets/imgs/artigo11.3.jpg" alt="Terceira imagem do slideshow">
                 </div>
                 <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
         <div id="productInfo" class="productInfo">
             <div id="info-text" class="text">
-                <h1 id="productTitle">Vintage Pullover Winter Striped </h1>
-                <h2 id="productPrice">€15,00</h2>
+                <h1 id="productTitle">Calças retas soltas</h1>
+                <h2 id="productPrice">€20,00</h2>
             </div>
-            <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">    
+    
+            <input id="addToCartButton" class="buttons" type="button" value="Adicione ao carrinho">
+            
             <div id="buttonsInfo" class="buttons">
                 <div class="dropdownSize">
                     <span id="SizeChart">Tabela de tamanhos</span>
                     <div class="dropdownSizeContent">
-                        <p>One size only! <br>
-                            <b>Bust:</b> 110cm <br>
-                            <b>Length:</b> 65cm <br>
-                            <b>Sleeve Length: </b>Full <br>
-                            <b>Sleeve Style:</b> Regular</p>
+                        <p>S-XL</p>
                     </div>
                 </div>
+    
                 <div class="dropdownDetail">
                     <span id="ProductDetail">Detalhes do produto</span>
                     <div class="dropdownDetailContent">
-                        <p> <b>Pattern Type:</b> Argyle <br>
-                            <b>Clothing Length:</b> Regular <br>
-                            <b>Label:</b> Yes <br>
-                            <b>Washing Care:</b> Hand or machine wash maximum temperature 30, line dry, iron at low temperature	<br>			
-                            <b>Material:</b> Polyester <br>
-                            <b>Collar: </b>O-Neck <br>
-                            <b>Thickness:</b> Thick (Winter) <br>
-                            <b>Closure Type: </b>None <br>
-                            <b>Style:</b> Casual <br>
-                            <b>Material Composition:</b> Knit <br>
+                        <p> <b>Material:</b> Algodão <br>
+                            <b>Estilo:</b> Casual <br>
+                            <b>Tipo de Desenho:</b> Carta <br>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> 
+        </div> 
+    </div>
     <footer>
         <div class="coluna-1">
             <h3>Links úteis</h3>
