@@ -187,7 +187,7 @@ function totalGeral(){
 // ----------------- ALERT PEDIDO CONCLUIDO -------------------------
 
 function funcaoAlerta() {
-  alert("Seu pedido foi finalizado com sucesso! \n Obrigado por comprar conosco!")
+  alert("Seu pedido foi realizado! \n Encaminhando para a página de check-out")
   location.href = './checkout.html'
 }
 
