@@ -143,14 +143,14 @@ input{
 .campos-input input{
     padding: 1rem;
     border-radius: 0.25em;
-    background-color: #ededed;
-    border: 1.6px solid black;
+    background-color: beige;
+    border: none;
     margin: 0.3125em;
     font-size: 0.8rem;
 }
 
 .campos-input input:focus{
-    background-color: white;
+    background-color: #dab88882;
 }
 
 #submit-pagar{
@@ -251,6 +251,8 @@ h3{
     text-decoration: none;
 }
 
+
+/*--------------Footer-----------------------*/
 footer{
     display: flex;
     justify-content: space-evenly;
