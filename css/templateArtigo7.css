@@ -18,13 +18,14 @@ body {
 
 #img-artigo1 {
     height: 75vh;
-    width: 35vw;
+    width: 45vw;
+
     margin-top: 10vh;
 }
 
 #img-artigo2 {
     height: 75vh;
-    width: 35vw;
+    width: 45vw;
     margin-top: 10vh;
 }
 
@@ -127,7 +128,7 @@ h1 {
 }
 
 .slides img{
-    width: auto;
+    width: 30vw;
     height: 30vw;
     object-fit: cover;
 }
