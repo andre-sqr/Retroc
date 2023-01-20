@@ -31,7 +31,7 @@ h2 {
 .overlay {
     opacity: 0;
     position: absolute;
-    top: 213px;
+    top: 28.6vh;
     width: 25vw; 
     height: 55vh;   
     text-align: center;
