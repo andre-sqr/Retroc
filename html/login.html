@@ -9,10 +9,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Log in</title>
     <script src="../js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 
 <body>
+    <header class="main-header_home">
+        <div class="main-header_logo">
+            <a href="../index.html"><img id="logo-homepage_header" src="../assets/imgs/retroc_logo_marrom.png" alt="logo da retroc"></a>
+        </div>
+        <div class="main-header_searchbar">
+                <input type="text" name="searchbar" id="searchbar-input" placeholder="Busque um produto...">
+            <div class="searchbar-icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="main-header_icons">
+            <div class="ellipse-icon" id="first-ellipse_header">
+                <div class="ellipse ellipse-color-orange"></div>
+                <div class="svg-ellipse">
+                    <a href="../html/login.html"><ion-icon name="person-outline"></ion-icon></a>
+                </div>
+            </div>
+            
+            <div class="ellipse-icon" id="second-ellipse_header">
+                <div class="ellipse ellipse-color-beige"></div></a>
+                <div class="svg-ellipse">
+                    <a href="../html/carrinhoCompras.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="div-container">
         <img class="fundo" src="../assets/imgs/img-login.jpg">
     
@@ -26,6 +54,7 @@
             <input type="password" class="password" placeholder="password" required> <br>
             <input type="submit" name="buttonSubmit" class="button" id="btnLogin" value="Log in" onclick=login()> <br>
             <p id="esquecestePassword"><a href="../html/esquecestePassword.html"> Esqueceste a password?</a></p>
+            <p id="noAccount"><a href="../html/registo.html"> Não tem conta? registre-se</a></p>
             <br>
         </form>
     </div>

@@ -156,10 +156,13 @@ header a {
     grid-row: 2;
     justify-items: center;
     align-items: center;
-    /* padding-top: 0.5%; */
-    /* padding-bottom: 2%; */
     column-gap: 4%;
     row-gap: 4%;
+}
+
+.categories-section a {
+    color: black;
+    text-decoration: none;
 }
 
 .category-box {
@@ -171,10 +174,6 @@ header a {
     height: 30vh;
     font-family: 'Inter', sans-serif;
     font-size: clamp(0.5rem, 2.5vw, 0.9rem); 
-    /* background-color: #F8DDBF; */
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
-    /* margin-bottom: 4%;
-    margin-top: 4%; */
 }
 
 .category_img {
@@ -233,6 +232,12 @@ header a {
     width: 25vh;
     height: 25vh;
     background-color:#B06426;
+}
+
+.product-box img {
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
 }
 
 .flex-align-center {
