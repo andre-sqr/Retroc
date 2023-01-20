@@ -155,7 +155,7 @@ footer{
     height: 11em;
 }
 
-h3{
+footer h3{
     display: flex;
     justify-content: center;
 }
