@@ -117,13 +117,13 @@ header a {
 
 .frame-sections {
     width: 100vw;
-    height: 83vh;
+    height: 100vh;
 }
 
 #section_profile {
     display: grid;
     grid-template-columns: 20vw 80vw;
-    grid-template-rows: 83vh;
+    grid-template-rows: 100vh;
 }
 
 .user-aside-bar {
