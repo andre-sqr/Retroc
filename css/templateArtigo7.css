@@ -18,14 +18,14 @@ body {
 
 #img-artigo1 {
     height: 75vh;
-    width: 45vw;
+    width: 50vw;
 
     margin-top: 10vh;
 }
 
 #img-artigo2 {
     height: 75vh;
-    width: 45vw;
+    width: 50vw;
     margin-top: 10vh;
 }
 
@@ -152,11 +152,11 @@ h1 {
 }
 
 .anterior{
-    left: 7.5%;
+    left: 7.6%;
 }
 
 .proximo{
-    left: 35.37%;
+    left: 35.2%;
 }
 
 .fade{

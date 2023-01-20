@@ -140,6 +140,7 @@ header a {
     padding: 12px 20px;
     border: none;
     color: white;
+    border-radius: 0.25em;
 }
 
 .div-container .button:hover {
@@ -167,6 +168,16 @@ header a {
     border: none;
     margin-top: 1vh;
 }
+
+input{
+    outline: none;
+    border-radius: 0.25em;
+}
+
+.div-container input:focus{
+    background-color: #dab88882;
+}
+
 
 h2 {
     text-align: left;
