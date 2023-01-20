@@ -251,7 +251,7 @@ body {
     outline: 0;
     height: 4vh;
     width: 22vw;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
