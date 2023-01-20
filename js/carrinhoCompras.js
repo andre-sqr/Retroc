@@ -188,5 +188,6 @@ function totalGeral(){
 
 function funcaoAlerta() {
   alert("Seu pedido foi finalizado com sucesso! \n Obrigado por comprar conosco!")
+  location.href = './checkout.html'
 }
 
