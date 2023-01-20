@@ -248,6 +248,7 @@ header a {
 /*____________________________Footer_________________________*/
 
 footer{
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-evenly;
     background-color: #546466;
