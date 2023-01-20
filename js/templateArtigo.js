@@ -18,3 +18,14 @@ function showSlides(ind){
     }
     slides[slideIndex-1].style.display = "block";
 }
+
+function addToCart() {
+    const alertbox = document.getElementById('alertbox_cart')
+    alertbox.style.display = 'flex'
+}
+
+const addbtn = document.getElementById('addToCartButton')
+addbtn.addEventListener("click", (e)=> {
+    e.preventDefault()
+    addToCart()
+})

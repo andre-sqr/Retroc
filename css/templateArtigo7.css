@@ -169,6 +169,27 @@ h1 {
     to{opacity: 1}
 }
 
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-item {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1vw;
+    padding: 1vh;
+    width: 40vw;
+    height: 5vh;
+    margin: 2vh;
+    color: #FFFFFF;
+    background-color: #546466;
+    border-radius: 10px;
+}
+
 /*_________Header______________*/
 
 .main-header_home {
